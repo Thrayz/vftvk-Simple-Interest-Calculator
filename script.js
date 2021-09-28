@@ -21,8 +21,10 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
     
 //Displaying the result of the calculation
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>"
-
+   document.getElementById("result").innerHTML = "Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
+        "at an interest rate of <mark>" + rate + "</mark>,<br/>" +
+        "You will receive an amount of <mark>" + interest + "</mark>,<br/> " +
+        "in the year <mark>" + yearInTheFuture + "</mark>";
 }
 
 //Updating the rate value when the slider is changed
